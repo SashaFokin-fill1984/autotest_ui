@@ -5,15 +5,42 @@
     <title>Title</title>
     <style>
         .h2-text {
-            color: red;}
+            color: yellow;}
+        #h1-text {
+            size: 30px;
+            }
+        .h6-text {
+            color: green;
+            }
+
+        div.python > a {
+            color: orange;
+            }
+
+        ul li {
+            color: pink;
+            }
+        input[type="text"] {
+            background-color: red;
+            }
+        a:hover {
+            color: green;}
+        li::marker {
+            color: blue;
+            }
+        ul > li:nth-child(2) {
+            color: blue;
+            }
+
     </style>
 </head>
 <body>
-<div>
+<div class="python">
     <h1 id="h1-text">H1 text</h1>
     <h2 class="h2-text">H2 text</h2>
     <h6 class="h2-text">H6 text</h6>
-    <p> Playwright enables reliable <span style="color: purple"> end-to-end testing</span> of modern web apps.</p> for modern web apps. </p>
+    <p> Playwright enables reliable <span style="color: purple"> end-to-end testing</span> of modern web apps.</p> for
+    modern web apps. </p>
     <a href="https://stepik.org/lesson/1452311/step/1?unit=1471322" target="_blank"> Playwright</a>
     <img alt="browsers.png" src="https://playwright.dev/python/img/logos/Browsers.png" style="width:250px">
 
@@ -30,11 +57,11 @@
     </ol>
 
     <form action="/action" method="POST">
-        <input type="text" placeholder="Text">
+        <input type="text" value="12345" placeholder="Text">
         <input required type="email" placeholder="Email">
         <input type="password" placeholder="Password">
         <textarea placeholder="Text">12345</textarea>
-        <button type="submit" >Click me</button>
+        <button type="submit">Click me</button>
     </form>
 
     <table>
@@ -59,8 +86,18 @@
         </tr>
         </tbody>
 
-
     </table>
+    <div class="nth">
+        <p>1</p>
+        <p>2</p>
+        <h6>4</h6>
+        <h3>5</h3>
+        <p>6</p>
+    </div>
+</div>
+<div class="java">
+    <h2 class="h2-text">H2 text</h2>
+    <a href="https://stepik.org/lesson/1452311/step/1?unit=1471322" target="_blank"> python</a>
 </div>
 </body>
 </html>
